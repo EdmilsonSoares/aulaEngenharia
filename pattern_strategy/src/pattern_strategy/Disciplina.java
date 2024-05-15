@@ -1,7 +1,7 @@
 package pattern_strategy;
 
 public class Disciplina {
-	private ICalcMedia CalcMedia; 
+	private InterfaceCalcMedia CalcMedia; 
 	public double Media;
 	private String Nome;
 	private double P1;
@@ -12,7 +12,7 @@ public class Disciplina {
 		this.Media = this.CalcMedia.CalculaMedia(P1, P2);
 	}
 	
-	public Disciplina(ICalcMedia calculo) {
+	public Disciplina(InterfaceCalcMedia calculo) {
 		this.CalcMedia = calculo;
 	}
 	
